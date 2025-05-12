@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Voting Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="#">📊 Dashboard</a>
+    <a href="#">🏆 Candidates</a>
+    <a href="#">📈 Results</a>
+    <a href="../html/add_candidate.html">👤 Add Candidate</a>
+    <a href="#">=> Logout</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Welcome, Admin</h1>
+      <span id="date"></span>
+    </div>
+
+    <div class="dashboard-cards">
+      <div class="card" >
+        <h5 id="totalcan">📌 Total Candidates</h5>
+        <!-- data -->
+       </div>
+
+      <div class="card">
+        <h5 id="TotalVotes"> <a href="../html/totalVotes.html"> 💬 Total Votes</a></h5>
+      </div>
+    </div>
+
+    <div class="voting-management">
+      <h2>Manage Voting</h2>
+      <div class="voting-options">
+        <div class="option">
+          <h3>Presidential Election</h3>
+          <button>View Votes</button>
+        </div>
+        <div class="option">
+          <h3>Vice Presidential Election</h3>
+          <button>View Votes</button>
+        </div>
+        <div class="option">
+          <h3>Secretary Election</h3>
+          <button>View Votes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="../js/admin.js"></script>
+</html>
