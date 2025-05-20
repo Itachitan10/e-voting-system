@@ -8,10 +8,13 @@
 </head>
 <body>
 
+  <div class="home"> 
+<button id="home">home</button>
+  </div>
   <div class="container">
     <h1>Voting Records</h1>
 
-    <!-- Search Bar -->
+ 
     <div class="search-bar">
       <input type="text" id="search" placeholder="Search records..." onkeyup="searchVotes()">
     </div>
@@ -49,44 +52,3 @@
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-//  function searchVotes() {
-//       const input = document.getElementById('search');
-//       const filter = input.value.toLowerCase();
-//       const table = document.getElementById('votesTable');
-//       const tr = table.getElementsByTagName('tr');
-
-//       for (let i = 1; i < tr.length; i++) {
-//         const tds = tr[i].getElementsByTagName('td');
-//         let found = false;
-
-//         for (let j = 0; j < tds.length - 1; j++) {
-//           const txtValue = tds[j].textContent || tds[j].innerText;
-//           if (txtValue.toLowerCase().includes(filter)) {
-//             found = true;
-//             break;
-//           }
-//         }
-
-//         tr[i].style.display = found ? "" : "none";
-//       }
-//     }
-
-//     function deleteRow(button) {
-//       const row = button.closest('tr');
-//       row.remove();
-//     }
-
-
- -->

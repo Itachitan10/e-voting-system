@@ -134,3 +134,21 @@
         font-size: 0.7rem;
       }
     }
+
+
+    .home{ 
+  
+  padding: 10px;
+  text-align: center;
+}
+#home{ 
+  height: 30px;
+  width: 60px;
+  background-color: blue;
+  border: none;
+  color: #ddd;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-style: italic;
+  box-shadow: 1px 5px 6px 3px ;
+}

@@ -10,44 +10,36 @@
 
   <div class="sidebar">
     <h2>Admin Panel</h2>
-    <a href="#">📊 Dashboard</a>
-    <a href="#">🏆 Candidates</a>
-    <a href="#">📈 Results</a>
-    <a href="../html/add_candidate.html">👤 Add Candidate</a>
-    <a href="#">=> Logout</a>
+    <a href="../html/totalcandadate.html"> Registerd Candidates</a>
+    <a href="../html/totalVotes.html">Total Votes</a>
+    <a href="../html/winner.html"> Results</a>
+    <a href="../html/add_candidate.html"> Add Candidate</a>
+    <a href="#"> Logout</a>
   </div>
 
   <div class="main">
     <div class="header">
-      <h1>Welcome, Admin</h1>
+      <h1 id="username">Wellcome, </h1>
       <span id="date"></span>
     </div>
 
     <div class="dashboard-cards">
       <div class="card" >
-        <h5 id="totalcan">📌 Total Candidates</h5>
+        <h5  id="totalcan"> Total Candidates</h5>
         <!-- data -->
        </div>
 
       <div class="card">
-        <h5 id="TotalVotes"> <a href="../html/totalVotes.html"> 💬 Total Votes</a></h5>
+        <h5 id="TotalVotes">Total Votes</h5>
       </div>
     </div>
 
     <div class="voting-management">
-      <h2>Manage Voting</h2>
+      <h2>Student link vote</h2>
       <div class="voting-options">
         <div class="option">
-          <h3>Presidential Election</h3>
-          <button>View Votes</button>
-        </div>
-        <div class="option">
-          <h3>Vice Presidential Election</h3>
-          <button>View Votes</button>
-        </div>
-        <div class="option">
-          <h3>Secretary Election</h3>
-          <button>View Votes</button>
+          <h3>Voting Link</h3>
+          <button id="btn" >View </button>
         </div>
       </div>
     </div>

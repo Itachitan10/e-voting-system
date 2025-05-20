@@ -1,31 +1,31 @@
-const express = require("express");
 const mysql = require("mysql");
 
-const dbcofig = {
+const dbConfig = {
   host: "localhost",
   user: "root",
   password: "",
   database: "voting_system",
 };
 
-const conn = mysql.createConnection(dbcofig);
+const conn = mysql.createConnection(dbConfig);
 
-conn.connect((err, result) => {
-  if (err) throw err;
-  console.log("connected to data base");
+conn.connect((err) => {
+  if (err) {
+    console.error("Error connecting to database:", err.message);
+    return;
+  }
+  console.log("Connected to database.");
 });
 
-module.exports = async (query, value = []) => {
-  return new Promise((resolve, rejects) => {
-    conn.query(query, value, (err, result) => {
+module.exports = (query, values = []) => {
+  return new Promise((resolve, reject) => {
+    conn.query(query, values, (err, result) => {
       if (err) {
-        throw err;
-        rejects(err);
-        return
-      } else {
-        console.log("successfull insert to data base");
-        resolve(result);
+        console.error("Query Error:", err.message);
+        reject(err); // eto lang ang kailangan, wag mag-throw
+        return;
       }
+      resolve(result);
     });
   });
 };

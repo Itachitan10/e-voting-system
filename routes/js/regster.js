@@ -9,7 +9,7 @@ document.getElementById("Login").addEventListener("click", function() {
     }
   
     const teacherData = {
-      name: teacherName,
+      name1: teacherName,
       password: password,
     };
   
@@ -28,8 +28,8 @@ document.getElementById("Login").addEventListener("click", function() {
     })
     .then(data => {
       console.log("Registered:", data);
-      alert("Welcome, " + teacherName + "!");
-      // Clear form
+      alert("successfull register, " + teacherName + "!");
+  
       document.getElementById("teacher-name").value = "";
       document.getElementById("password").value = "";
       errorMessage.textContent = "";

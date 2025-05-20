@@ -11,15 +11,19 @@ const conn = require('../database/db')
 
 
 routes.post ("/teachers",  async(req, res) => {
-    const { name, password} = req.body;
+    const { name1, password} = req.body;
 
-    if (!name || !password) {
+    console.log(name1 , password);
+    
+
+    if (!name1 || !password) {
         console.log('no data');
     } else {
-        const sql = await conn(`INSERT INTO teachers(name ,password ) value("${name}"," ${password}")`)
-        if(!sql){ 
+        const sql1 = await conn(`INSERT INTO teachers(teacherName ,password1) value("${name1}"," ${password}")`)
+        if(!sql1){ 
         console.log('error inserting  data bse');
         }else{
+          res.json({mess : "sucess full inserting data bse"})
             console.log('sucess full inserting data bse');
             
         }

@@ -52,3 +52,10 @@ function deletedata() {
     });
   });
 }
+
+
+document.getElementById('home').addEventListener('click', ()=>{ 
+  setTimeout(() => {
+    window.location.href = "/Admin"
+  }, 1000);
+})
